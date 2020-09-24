@@ -1,0 +1,14 @@
+/*
+ * ANÁLISE SOBRE A VARIAVEL DE DATA DO CADATRO DE PRODUTOS
+ */
+
+LIBNAME ALURA "/folders/myfolders/AluraPlay";
+
+PROC DATASETS
+	LIB=ALURA DETAILS;
+RUN;
+
+PROC FREQ
+	DATA=alura.cadastro_produto_v2;
+	TABLE DATA;
+RUN;
